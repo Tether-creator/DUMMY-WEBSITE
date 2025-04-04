@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourToken - The Future of Decentralized Finance</title>
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <!-- FontAwesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    /* Hero Section */
+    .hero-section {
+      background: url('hero-background.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 120px 0;
+      text-align: center;
+    }
+    /* Section Headings */
+    section h2 {
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+    /* Timeline Styles */
+    .timeline {
+      list-style: none;
+      padding: 0;
+      position: relative;
+    }
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: #e9ecef;
+    }
+    .timeline li {
+      position: relative;
+      min-height: 50px;
+      margin-bottom: 50px;
+    }
+    .timeline li .timeline-panel {
+      background: #fff;
+      border: 1px solid #e9ecef;
+      padding: 20px;
+      border-radius: 5px;
+      width: 45%;
+      position: relative;
+    }
+    .timeline li .timeline-badge {
+      color: #fff;
+      background: #007bff;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.2em;
+      text-align: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -25px;
+    }
+    .timeline li:nth-child(odd) .timeline-panel {
+      left: 0;
+    }
+    .timeline li:nth-child(even) .timeline-panel {
+      left: 55%;
+    }
+    @media (max-width: 767.98px) {
+      .timeline li .timeline-panel,
+      .timeline li:nth-child(even) .timeline-panel,
+      .timeline li:nth-child(odd) .timeline-panel {
+        width: 100%;
+        left: 0 !important;
+      }
+      .timeline:before {
+        left: 20px;
+      }
+      .timeline li .timeline-badge {
+        left: 10px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">YourToken</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#roadmap">Roadmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1 class="display-4">Welcome to YourToken</h1>
+      <p class="lead">Redefining the future of decentralized finance.</p>
+      <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">About YourToken</h2>
+      <p class="text-center">
+        YourToken is a next-generation cryptocurrency designed to empower
+        users and redefine the standards of blockchain finance.
+      </p>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <i class="fas fa-shield-alt fa-3x mb-3"></i>
+          <h4>Security</h4>
+          <p>
+            Our smart contract has undergone rigorous audits to ensure maximum
+            security.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fas fa-sync-alt fa-3x mb-3"></i>
+          <h4>Transparency</h4>
+          <p>
+            All functionalities, including minting and burning, are clearly
+            documented and controlled.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fas fa-chart-line fa-3x mb-3"></i>
+          <h4>Growth</h4>
+          <p>
+            Continuous improvements and expanding utility are at the heart of
+            our mission.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Tokenomics</h2>
+      <div class="row align-items-center mt-4">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><strong>Total Supply:</strong> 1,000,000,000 YTK</li>
+            <li><strong>Circulating Supply:</strong> TBD</li>
+            <li><strong>Liquidity:</strong> Provided</li>
+            <li><strong>Transaction Tax:</strong> TBD</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <!-- Replace with an actual chart image or infographic -->
+          <img
+            src="tokenomics-chart.png"
+            alt="Tokenomics Chart"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Roadmap</h2>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge">Q1 2023</div>
+          <div class="timeline-panel">
+            <h4>Project Launch</h4>
+            <p>Initial launch of YourToken with a community event.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge">Q2 2023</div>
+          <div class="timeline-panel">
+            <h4>Partnerships</h4>
+            <p>
+              Establish key partnerships and begin listings on major exchanges.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge">Q3 2023</div>
+          <div class="timeline-panel">
+            <h4>Feature Expansion</h4>
+            <p>
+              Launch additional utilities and integrations within the ecosystem.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge">Q4 2023</div>
+          <div class="timeline-panel">
+            <h4>Global Outreach</h4>
+            <p>
+              Expand our community and global presence through targeted marketing
+              campaigns.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <div class="row mt-5">
+        <div class="col-md-4 text-center">
+          <img
+            src="team1.jpg"
+            alt="Team Member"
+            class="img-fluid rounded-circle mb-3"
+          />
+          <h5>John Doe</h5>
+          <p>Founder &amp; CEO</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="team2.jpg"
+            alt="Team Member"
+            class="img-fluid rounded-circle mb-3"
+          />
+          <h5>Jane Smith</h5>
+          <p>CTO</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img
+            src="team3.jpg"
+            alt="Team Member"
+            class="img-fluid rounded-circle mb-3"
+          />
+          <h5>Emily Johnson</h5>
+          <p>Marketing Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form class="mt-4">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 YourToken. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
