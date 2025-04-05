@@ -44,6 +44,11 @@
     .navbar-brand img {
       margin-right: 8px;
     }
+    /* New container for header tabs */
+    .nav-tabs-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
     /* Hero Section */
     .hero-section {
       background: url('img/hero-background.jpg') no-repeat center center/cover;
@@ -128,35 +133,38 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#tokenomics">Tokenomics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#roadmap">Roadmap</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#whitepaper">Whitepaper</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#join">Join the Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#airdrop">Airdrop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <!-- Header tabs inside their own container -->
+        <div class="nav-tabs-container">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tokenomics">Tokenomics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#roadmap">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whitepaper">Whitepaper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#join">Join the Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#airdrop">Airdrop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
