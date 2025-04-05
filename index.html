@@ -44,10 +44,9 @@
     .navbar-brand img {
       margin-right: 8px;
     }
-    /* New container for header tabs */
-    .nav-tabs-container {
-      max-width: 800px;
-      margin: 0 auto;
+    /* Container for header tabs */
+    .header-tabs {
+      background-color: var(--primary-color);
     }
     /* Hero Section */
     .hero-section {
@@ -82,10 +81,6 @@
       background-color: var(--accent-color);
       border-color: var(--accent-color);
     }
-    /* Team Images */
-    .team-member img {
-      border: 3px solid var(--primary-color);
-    }
     /* Footer */
     footer {
       background-color: var(--dark-color);
@@ -119,23 +114,21 @@
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg">
+    <!-- Top Container for Logo and Toggler -->
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="otokologo.png" alt="OTOKO Logo" width="40" height="40" class="d-inline-block align-center" />
         OTOKO (OTK)
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBrandNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Header tabs inside their own container -->
-        <div class="nav-tabs-container">
-          <ul class="navbar-nav ml-auto">
+    </div>
+    <!-- Separate Container for Header Tabs -->
+    <div class="header-tabs">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarBrandNav">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#home">Home</a>
             </li>
