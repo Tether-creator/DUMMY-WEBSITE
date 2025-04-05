@@ -81,4 +81,298 @@
     }
     .btn-primary:hover {
       background-color: var(--accent-color);
-      border
+      border-color: var(--accent-color);
+    }
+    /* Team Images */
+    .team-member img {
+      border: 3px solid var(--primary-color);
+    }
+    /* Footer */
+    footer {
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer .social-icons a {
+      color: var(--light-color);
+      margin: 0 10px;
+      font-size: 1.5em;
+      transition: color 0.3s ease;
+    }
+    footer .social-icons a:hover {
+      color: var(--accent-color);
+    }
+    /* Timeline Items (Roadmap) */
+    .timeline {
+      border-left: 2px solid var(--primary-color);
+      padding-left: 20px;
+      margin: 0;
+    }
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+    .timeline-item h4 {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Brand (Logo + Name) -->
+      <a class="navbar-brand" href="#">
+        <img src="otokologo.png" alt="OTOKO Logo" width="40" height="40" class="d-inline-block align-center" />
+        OTOKO (OTK)
+      </a>
+      <!-- Toggler (for mobile) -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavCustom"
+        aria-controls="navbarNavCustom"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Links in Individual Containers -->
+      <div class="collapse navbar-collapse" id="navbarNavCustom">
+        <div class="d-flex justify-content-end align-items-center w-100">
+          <div class="nav-link-container">
+            <a class="nav-link" href="#home">Home</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#about">About</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#roadmap">Roadmap</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#team">Team</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#whitepaper">Whitepaper</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#join">Join the Team</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#airdrop">Airdrop</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <img src="otokologo.png" alt="OTOKO Logo" width="120" height="120" class="mb-4" />
+      <h1 class="display-4">Welcome to OTOKO</h1>
+      <p class="lead">Redefining the future of decentralized finance.</p>
+      <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center">About OTOKO</h2>
+    <p class="text-center">
+      OTOKO is a groundbreaking token built on the Binance Smart Chain,
+      emphasizing transparency and community-driven innovation. With its
+      secure smart contract and fair airdrop mechanism, OTOKO is designed to
+      empower users and transform decentralized finance.
+    </p>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Tokenomics</h2>
+      <div class="row align-items-center mt-4">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><strong>Total Supply:</strong> 100,000,000,000,000 OTK</li>
+            <li><strong>Decimals:</strong> 18</li>
+            <li><strong>Airdrop:</strong> 10,000 OTK (eligible after 3 trades)</li>
+            <li><strong>Trade Count:</strong> Activity-based eligibility</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <!-- Replace with your tokenomics infographic -->
+          <img
+            src="img/tokenomics-chart.png"
+            alt="Tokenomics Chart"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Roadmap</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Q1 2025</h4>
+          <p>Launch of OTOKO and initial community engagement.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Q2 2025</h4>
+          <p>Partnership announcements and key exchange integrations.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Q3 2025</h4>
+          <p>Feature expansion and enhanced token utility developments.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Q4 2025</h4>
+          <p>Global outreach and listing on major wallets, including Trust Wallet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center team-member">
+          <img
+            src="img/team1.jpg"
+            alt="Team Member"
+            class="img-fluid rounded-circle mb-3"
+            width="150"
+            height="150"
+          />
+          <h5>John Doe</h5>
+          <p>Founder &amp; CEO</p>
+        </div>
+        <div class="col-md-4 text-center team-member">
+          <img
+            src="img/team2.jpg"
+            alt="Team Member"
+            class="img-fluid rounded-circle mb-3"
+            width="150"
+            height="150"
+          />
+          <h5>Jane Smith</h5>
+          <p>CTO</p>
+        </div>
+        <div class="col-md-4 text-center team-member">
+          <img
+            src="img/team3.jpg"
+            alt="Team Member"
+            class="img-fluid rounded-circle mb-3"
+            width="150"
+            height="150"
+          />
+          <h5>Emily Johnson</h5>
+          <p>Marketing Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Whitepaper Section -->
+  <section id="whitepaper" class="container py-5">
+    <h2 class="text-center">Whitepaper</h2>
+    <p class="text-center">
+      Download our comprehensive whitepaper to learn more about OTOKO, our technology,
+      tokenomics, and future plans.
+    </p>
+    <div class="text-center">
+      <a href="whitepaper.pdf" class="btn btn-primary">Download Whitepaper</a>
+    </div>
+  </section>
+
+  <!-- Join the Team Section -->
+  <section id="join" class="container py-5">
+    <h2 class="text-center">Join the Team</h2>
+    <p class="text-center">
+      We're always looking for passionate individuals to help us grow. If you're
+      interested in joining our team, get in touch!
+    </p>
+    <div class="text-center">
+      <a href="#contact" class="btn btn-primary">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Airdrop Section -->
+  <section id="airdrop" class="container py-5">
+    <h2 class="text-center">Airdrop</h2>
+    <p class="text-center">
+      Trade at least 3 times to qualify for a 10,000 OTK airdrop. Join the community
+      and start trading!
+    </p>
+    <div class="text-center">
+      <a href="#contact" class="btn btn-primary">Claim Airdrop</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center">Contact Us</h2>
+    <form class="mt-4">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-icons mb-3">
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="Medium"><i class="fab fa-medium-m"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="#" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>&copy; 2025 OTOKO. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
