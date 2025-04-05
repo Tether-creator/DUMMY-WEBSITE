@@ -18,9 +18,9 @@
   <link rel="icon" type="image/png" href="otokologofavicon.png" />
   <style>
     :root {
-      /* Adjust these colors to match your logo theme */
-      --primary-color: #60879d; /* Example: blue */
-      --accent-color: #2fb5d5;  /* Example: gold/yellow */
+      /* Colors extracted from your logo palette */
+      --primary-color: #60879d;
+      --accent-color: #2fb5d5;
       --dark-color: #26475e;
       --light-color: #b4ccca;
     }
@@ -48,7 +48,10 @@
     .nav-link-container {
       display: flex;
       align-items: center;
-      padding: 0 10px; /* Adjust spacing as needed */
+      padding: 5px 10px; /* Increased padding for visibility */
+      margin: 0 5px;     /* Space between boxes */
+      border: 1px solid rgba(255, 255, 255, 0.5); /* Visible border */
+      border-radius: 4px; /* Rounded corners */
     }
     /* Hero Section */
     .hero-section {
@@ -140,7 +143,7 @@
       </button>
       <!-- Navigation Links in Individual Containers -->
       <div class="collapse navbar-collapse" id="navbarNavCustom">
-        <div class="d-flex justify-content-end align-item-center w-100">
+        <div class="d-flex justify-content-end align-items-center w-100">
           <div class="nav-link-container">
             <a class="nav-link" href="#home">Home</a>
           </div>
@@ -162,7 +165,9 @@
           <div class="nav-link-container">
             <a class="nav-link" href="#airdrop">Airdrop</a>
           </div>
-         </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </div>
