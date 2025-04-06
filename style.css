@@ -5,6 +5,12 @@
   --dark-color: #26475e;
   --light-color: #b4ccca;
 }
+.gradient-text {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* adjust the colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 body {
   font-family: Arial, sans-serif;
@@ -33,7 +39,7 @@ body {
 
 /* Main Title Styling */
 .main-title {
-  font-weight: 750; /* Extra bold */
+  font-weight: 800; /* Extra bold */
   font-size: 2rem;  /* Adjust size as needed */
   margin: 0;
   display: inline-block;
