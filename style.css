@@ -1,0 +1,128 @@
+:root {
+  /* Colors from your logo */
+  --primary-color: #60879d;
+  --accent-color: #2fb5d5;
+  --dark-color: #26475e;
+  --light-color: #b4ccca;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--light-color) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar-brand img {
+  margin-right: 8px;
+}
+
+/* Main Title Styling */
+.main-title {
+  font-weight: 900; /* Extra bold */
+  font-size: 2rem;  /* Adjust size as needed */
+  margin: 0;
+  display: inline-block;
+}
+
+/* Individual Nav Link Container */
+.nav-link-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('img/hero-background.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section Headings */
+section h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Team Images */
+.team-member img {
+  border: 3px solid var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .social-icons a {
+  color: var(--light-color);
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: var(--accent-color);
+}
+
+/* Timeline Items (Roadmap) */
+.timeline {
+  border-left: 2px solid var(--primary-color);
+  padding-left: 20px;
+  margin: 0;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+.timeline-item h4 {
+  color: var(--primary-color);
+}
