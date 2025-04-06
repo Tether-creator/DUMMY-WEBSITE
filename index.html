@@ -5,143 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OTOKO - The Future of Decentralized Finance</title>
   <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <!-- FontAwesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="otokologofavicon.png" />
-  <style>
-    :root {
-      /* Adjust these colors to match your logo theme */
-      --primary-color: #60879d; /* Example: blue */
-      --accent-color: #2fb5d5;  /* Example: gold/yellow */
-      --dark-color: #26475e;
-      --light-color: #b4ccca;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      color: var(--dark-color);
-      background-color: var(--light-color);
-    }
-    /* Navbar Styling */
-    .navbar {
-      background-color: var(--primary-color);
-    }
-    .navbar-brand,
-    .nav-link {
-      color: var(--light-color) !important;
-      transition: color 0.3s ease;
-    }
-    .nav-link:hover {
-      color: var(--accent-color) !important;
-    }
-    .navbar-brand img {
-      margin-right: 8px;
-    }
-    /* Individual Nav Link Container */
-    .nav-link-container {
-      display: flex;
-      align-items: center;
-      padding: 0 10px; /* Adjust spacing as needed */
-    }
-    /* Hero Section */
-    .hero-section {
-      background: url('img/hero-background.jpg') no-repeat center center/cover;
-      position: relative;
-      padding: 120px 0;
-      text-align: center;
-      color: var(--light-color);
-    }
-    .hero-section::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-    }
-    .hero-section .container {
-      position: relative;
-      z-index: 2;
-    }
-    /* Section Headings */
-    section h2 {
-      font-weight: bold;
-      margin-bottom: 40px;
-      color: var(--primary-color);
-    }
-    /* Buttons */
-    .btn-primary {
-      background-color: var(--primary-color);
-      border-color: var(--primary-color);
-    }
-    .btn-primary:hover {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
-    }
-    /* Team Images */
-    .team-member img {
-      border: 3px solid var(--primary-color);
-    }
-    /* Footer */
-    footer {
-      background-color: var(--dark-color);
-      color: var(--light-color);
-      padding: 20px 0;
-      text-align: center;
-    }
-    footer .social-icons a {
-      color: var(--light-color);
-      margin: 0 10px;
-      font-size: 1.5em;
-      transition: color 0.3s ease;
-    }
-    footer .social-icons a:hover {
-      color: var(--accent-color);
-    }
-    /* Timeline Items (Roadmap) */
-    .timeline {
-      border-left: 2px solid var(--primary-color);
-      padding-left: 20px;
-      margin: 0;
-    }
-    .timeline-item {
-      margin-bottom: 30px;
-    }
-    .timeline-item h4 {
-      color: var(--primary-color);
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <!-- Brand (Logo + Name) -->
+      <!-- Brand (Logo + Main Title) -->
       <a class="navbar-brand" href="#">
-      <img src="otokologo.png" alt="OTOKO Logo" width="40" height="40" class="d-inline-block align-center" />
-<span class="font-weight-bold">OTOKO (OTK)</span>
-
+        <img src="otokologo.png" alt="OTOKO Logo" width="40" height="40" class="d-inline-block align-center" />
+        <h1 class="main-title">OTOKO (OTK)</h1>
       </a>
       <!-- Toggler (for mobile) -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavCustom"
-        aria-controls="navbarNavCustom"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavCustom" aria-controls="navbarNavCustom" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Navigation Links in Individual Containers -->
       <div class="collapse navbar-collapse" id="navbarNavCustom">
-        <div class="d-flex justify-content-end align-item-center w-100">
+        <div class="d-flex justify-content-end align-items-center w-100">
           <div class="nav-link-container">
             <a class="nav-link" href="#home">Home</a>
           </div>
@@ -163,7 +50,6 @@
           <div class="nav-link-container">
             <a class="nav-link" href="#airdrop">Airdrop</a>
           </div>
-         </div>
         </div>
       </div>
     </div>
@@ -183,10 +69,7 @@
   <section id="about" class="container py-5">
     <h2 class="text-center">About OTOKO</h2>
     <p class="text-center">
-      OTOKO is a groundbreaking token built on the Binance Smart Chain,
-      emphasizing transparency and community-driven innovation. With its
-      secure smart contract and fair airdrop mechanism, OTOKO is designed to
-      empower users and transform decentralized finance.
+      OTOKO is a groundbreaking token built on the Binance Smart Chain, emphasizing transparency and community-driven innovation. With its secure smart contract and fair airdrop mechanism, OTOKO is designed to empower users and transform decentralized finance.
     </p>
   </section>
 
@@ -204,12 +87,7 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <!-- Replace with your tokenomics infographic -->
-          <img
-            src="img/tokenomics-chart.png"
-            alt="Tokenomics Chart"
-            class="img-fluid"
-          />
+          <img src="img/tokenomics-chart.png" alt="Tokenomics Chart" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -246,35 +124,17 @@
       <h2 class="text-center">Our Team</h2>
       <div class="row mt-4">
         <div class="col-md-4 text-center team-member">
-          <img
-            src="img/team1.jpg"
-            alt="Team Member"
-            class="img-fluid rounded-circle mb-3"
-            width="150"
-            height="150"
-          />
+          <img src="img/team1.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150" />
           <h5>John Doe</h5>
           <p>Founder &amp; CEO</p>
         </div>
         <div class="col-md-4 text-center team-member">
-          <img
-            src="img/team2.jpg"
-            alt="Team Member"
-            class="img-fluid rounded-circle mb-3"
-            width="150"
-            height="150"
-          />
+          <img src="img/team2.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150" />
           <h5>Jane Smith</h5>
           <p>CTO</p>
         </div>
         <div class="col-md-4 text-center team-member">
-          <img
-            src="img/team3.jpg"
-            alt="Team Member"
-            class="img-fluid rounded-circle mb-3"
-            width="150"
-            height="150"
-          />
+          <img src="img/team3.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150" />
           <h5>Emily Johnson</h5>
           <p>Marketing Lead</p>
         </div>
@@ -286,8 +146,7 @@
   <section id="whitepaper" class="container py-5">
     <h2 class="text-center">Whitepaper</h2>
     <p class="text-center">
-      Download our comprehensive whitepaper to learn more about OTOKO, our technology,
-      tokenomics, and future plans.
+      Download our comprehensive whitepaper to learn more about OTOKO, our technology, tokenomics, and future plans.
     </p>
     <div class="text-center">
       <a href="whitepaper.pdf" class="btn btn-primary">Download Whitepaper</a>
@@ -298,8 +157,7 @@
   <section id="join" class="container py-5">
     <h2 class="text-center">Join the Team</h2>
     <p class="text-center">
-      We're always looking for passionate individuals to help us grow. If you're
-      interested in joining our team, get in touch!
+      We're always looking for passionate individuals to help us grow. If you're interested in joining our team, get in touch!
     </p>
     <div class="text-center">
       <a href="#contact" class="btn btn-primary">Apply Now</a>
@@ -310,8 +168,7 @@
   <section id="airdrop" class="container py-5">
     <h2 class="text-center">Airdrop</h2>
     <p class="text-center">
-      Trade at least 3 times to qualify for a 10,000 OTK airdrop. Join the community
-      and start trading!
+      Trade at least 3 times to qualify for a 10,000 OTK airdrop. Join the community and start trading!
     </p>
     <div class="text-center">
       <a href="#contact" class="btn btn-primary">Claim Airdrop</a>
@@ -358,17 +215,8 @@
   </footer>
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
