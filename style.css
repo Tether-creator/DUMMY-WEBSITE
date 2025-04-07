@@ -39,7 +39,7 @@ body {
 
 /* Main Title Styling */
 .main-title {
-  font-weight: 800; /* Extra bold */
+  font-weight: 600; /* Extra bold */
   font-size: 2rem;  /* Adjust size as needed */
   margin: 0;
   display: inline-block;
