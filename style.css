@@ -5,6 +5,13 @@
   --light-color: #b4ccca;
 }
 
+.section-divider {
+  border: none;
+  border-top: 2px solid var(--primary-color);
+  margin: 2rem 0;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   color: var(--dark-color);
