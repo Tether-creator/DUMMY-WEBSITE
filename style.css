@@ -5,13 +5,6 @@
   --light-color: #b4ccca;
 }
 
-.section-divider {
-  border: none;
-  border-top: 2px solid var(--primary-color);
-  margin: 2rem 0;
-}
-
-
 body {
   font-family: Arial, sans-serif;
   color: var(--dark-color);
@@ -30,7 +23,7 @@ body {
 }
 
 .navbar-brand img {
-  margin-right: 4px; /* Reduced margin for tighter spacing */
+  margin-right: 4px;
   vertical-align: middle;
 }
 
@@ -38,11 +31,10 @@ body {
   margin: 0;
   font-weight: 900;
   font-size: 2rem;
-  line-height: 1; /* Adjust as needed for vertical alignment */
+  line-height: 1;
   display: inline-block;
 }
 
-/* Nav link styling */
 .navbar-brand,
 .nav-link {
   color: var(--light-color) !important;
@@ -141,38 +133,28 @@ footer .social-icons a:hover {
   color: var(--primary-color);
 }
 
-.coingecko-banner {
-  background: #26475e; /* Or any background color/image you prefer */
-  color: #fff;
+/* CTA Section Styling for Whitepaper, Join the Team, and Airdrop */
+.cta-section {
   padding: 20px;
+  text-align: center;
+}
+
+/* Vertical divider between CTA columns for medium+ screens */
+.cta-section:not(:last-child) {
+  border-right: 2px solid var(--primary-color);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 767.98px) {
+  .cta-section:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+  }
+}
+
+/* GeckoTerminal Banner Styling */
+.geckoterminal-banner {
   margin: 20px 0;
-  border-radius: 6px;
+  text-align: center;
 }
-
-.coingecko-banner h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.coingecko-banner p {
-  margin-bottom: 15px;
-}
-
-.coingecko-link {
-  display: inline-block;
-  background-color: #2fb5d5; /* CoinGecko accent or your accent color */
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.coingecko-link:hover {
-  background-color: #fff;
-  color: #2fb5d5;
-  text-decoration: none;
-}
-
