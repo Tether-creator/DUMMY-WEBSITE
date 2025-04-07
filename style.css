@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-brand img {
-  margin-right: 4px; /* Reduced margin for tighter spacing */
+  margin-right: 4px; /* Tighter spacing */
   vertical-align: middle;
 }
 
@@ -132,4 +132,10 @@ footer .social-icons a:hover {
 
 .timeline-item h4 {
   color: var(--primary-color);
+}
+
+/* GeckoTerminal Banner Styling */
+.geckoterminal-banner {
+  margin: 20px 0;
+  text-align: center;
 }
