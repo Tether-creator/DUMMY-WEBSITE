@@ -16,6 +16,28 @@ body {
   background-color: var(--primary-color);
 }
 
+/* Make the navbar-brand a flex container to align logo and text */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Main Title Styling */
+.main-title {
+  margin: 0;
+  margin-left: 8px; /* Adjust space between logo and text */
+  font-weight: 900;
+  font-size: 2rem;
+  /* Set line-height equal to the logo's height (40px) for alignment */
+  line-height: 40px;
+  display: inline-block;
+}
+
 .navbar-brand,
 .nav-link {
   color: var(--light-color) !important;
@@ -24,19 +46,6 @@ body {
 
 .nav-link:hover {
   color: var(--accent-color) !important;
-}
-
-.navbar-brand img {
-  margin-right: 8px;
-}
-
-/* Main Title Styling */
-.main-title {
-  margin: 0;
-  margin-left: 8px; /* Adjust space between logo and title */
-  font-weight: 900;
-  font-size: 2rem;
-  display: inline-block;
 }
 
 /* Individual Nav Link Container */
@@ -55,7 +64,6 @@ body {
   color: var(--light-color);
 }
 
-/* Updated Hero Overlay with Gradient */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -63,7 +71,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* A vertical gradient overlay for improved text legibility */
   background: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
 }
 
@@ -98,33 +105,4 @@ section h2 {
 /* Footer */
 footer {
   background-color: var(--dark-color);
-  color: var(--light-color);
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer .social-icons a {
-  color: var(--light-color);
-  margin: 0 10px;
-  font-size: 1.5em;
-  transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-  color: var(--accent-color);
-}
-
-/* Timeline Items (Roadmap) */
-.timeline {
-  border-left: 2px solid var(--primary-color);
-  padding-left: 20px;
-  margin: 0;
-}
-
-.timeline-item {
-  margin-bottom: 30px;
-}
-
-.timeline-item h4 {
-  color: var(--primary-color);
-}
+  color
