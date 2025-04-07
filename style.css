@@ -16,12 +16,6 @@ body {
   background-color: var(--primary-color);
 }
 
-/* Make navbar-brand a flex container for vertical centering */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
 .navbar-brand,
 .nav-link {
   color: var(--light-color) !important;
@@ -39,7 +33,7 @@ body {
 /* Main Title Styling */
 .main-title {
   margin: 0;
-  margin-left: 8px; /* Adjust space between logo and text */
+  margin-left: 8px; /* Adjust space between logo and title */
   font-weight: 900;
   font-size: 2rem;
   display: inline-block;
@@ -61,6 +55,7 @@ body {
   color: var(--light-color);
 }
 
+/* Updated Hero Overlay with Gradient */
 .hero-section::before {
   content: '';
   position: absolute;
@@ -68,7 +63,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* A vertical gradient overlay for improved text legibility */
+  background: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
 }
 
 .hero-section .container {
