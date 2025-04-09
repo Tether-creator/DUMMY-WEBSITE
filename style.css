@@ -158,3 +158,13 @@ footer .social-icons a:hover {
   margin: 20px 0;
   text-align: center;
 }
+
+/* CoinGecko Banner Styling */
+.coingecko-banner {
+  margin: 20px auto;          /* vertical margin to separate it from other sections */
+  padding: 20px;              /* internal padding for a more spacious look */
+  text-align: center;
+  background-color: #ffffff;  /* optional: a white background for contrast */
+  border: 2px solid var(--primary-color); /* a border to clearly define the container */
+  border-radius: 8px;         /* slight rounding of corners */
+}
