@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-brand img {
-  margin-right: 4px;
+  margin-right: 4px; /* Tighter spacing */
   vertical-align: middle;
 }
 
@@ -153,26 +153,19 @@ footer .social-icons a:hover {
   }
 }
 
-/* GeckoTerminal Banner Styling */
-.geckoterminal-banner {
-  margin: 20px 0;
-  text-align: center;
-}
-
-/* Updated CoinGecko Banner Styling */
+/* CoinGecko Banner Styling */
 .coingecko-banner {
-  margin: 20px auto !important;
-  padding: 30px !important;
+  margin: 20px auto;
+  padding: 30px;
   text-align: center;
-  background-color: #2fb5d5 !important; /* or use a color that suits your design */
-  border: 2px solid var(--primary-color) !important;
-  border-radius: 8px !important;
+  background-color: #ffffff;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
 }
 
-/* Style for the CoinGecko link within the banner */
 .coingecko-link {
   display: inline-block;
-  padding: 10px 20px; /* Add padding for a button-like appearance */
+  padding: 10px 20px;
   background-color: var(--primary-color);
   color: var(--light-color);
   border-radius: 4px;
