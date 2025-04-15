@@ -180,11 +180,22 @@ footer .social-icons a:hover {
 }
 
 .nav-link-container {
-  padding: 10px 15px !important;
-  border-radius: 5px !important;
-  transition: background-color 0.3s ease !important;
+  /* Always visible styles */
+  display: flex;
+  align-items: center;
+  margin: 0 5px;              /* Some horizontal spacing between each container */
+  padding: 5px 10px;          /* The padding that ensures the “padded container” look */
+  border-radius: 4px;         /* Rounds corners a bit */
+  
+  /* Subtle background color so container is visible at all times 
+     Adjust RGBA or color codes as needed to match your navbar design */
+  background-color: rgba(255, 255, 255, 0.05);
+  
+  /* Smooth transition for hover changes */
+  transition: background-color 0.3s ease;
 }
 
 .nav-link-container:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  /* Highlight background on hover */
+  background-color: rgba(255, 255, 255, 0.15);
 }
