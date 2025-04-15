@@ -1,0 +1,43 @@
+<!-- About OTOKO Section -->
+<section id="about" class="container py-5">
+  <h2 class="text-center">About OTOKO</h2>
+  <p class="lead text-center">
+    OTOKO is a groundbreaking token built on the Binance Smart Chain, designed to revolutionize decentralized finance through transparency, security, and community empowerment.
+  </p>
+  <div class="about-content">
+    <h3>Our Vision</h3>
+    <p>
+      At OTOKO, we envision a financial ecosystem free from centralization and opacity—where every participant, regardless of scale, has the opportunity to influence and benefit from the success of the network. Our aim is to foster a future where financial systems are open, accessible, and built on trust.
+    </p>
+
+    <h3>Innovative Technology</h3>
+    <p>
+      Our token leverages the robust infrastructure of the Binance Smart Chain to deliver fast, cost-effective, and secure transactions. By integrating advanced smart contract mechanisms, OTOKO ensures:
+    </p>
+    <ul>
+      <li><strong>Transparency:</strong> Every transaction is recorded and accessible on the blockchain.</li>
+      <li><strong>Security:</strong> Our smart contracts undergo rigorous audits to maintain the highest security standards.</li>
+      <li><strong>Efficiency:</strong> With low transaction fees and quick processing times, OTOKO is built for the future of DeFi.</li>
+    </ul>
+
+    <h3>Token Utility and Growth</h3>
+    <p>
+      OTOKO is more than just a token—it is a dynamic asset engineered to empower its holders. Key utility features include:
+    </p>
+    <ul>
+      <li><strong>Decentralized Governance:</strong> Token holders actively participate in decisions that shape the project's future.</li>
+      <li><strong>Staking and Rewards:</strong> Secure staking platforms provide consistent rewards and incentivize long-term holding.</li>
+      <li><strong>Robust Ecosystem Integration:</strong> OTOKO can be used for various financial applications, from payments to DeFi integrations.</li>
+    </ul>
+
+    <h3>Empowering Our Community</h3>
+    <p>
+      Our commitment to community is at the heart of OTOKO. We engage continuously with our ecosystem through transparent communications, regular updates, and open governance mechanisms. By inviting investors and enthusiasts to participate, we are building a decentralized network where every voice counts.
+    </p>
+
+    <h3>Looking Ahead</h3>
+    <p>
+      With a clear roadmap focused on sustainable growth, strategic partnerships, and innovative use-cases, OTOKO is poised to set new standards in decentralized finance. Join us in shaping a future where financial empowerment is accessible to all.
+    </p>
+  </div>
+</section>
