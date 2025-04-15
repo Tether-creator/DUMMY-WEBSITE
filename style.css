@@ -76,6 +76,22 @@ body {
   z-index: 2;
 }
 
+.nav-link-container {
+  display: flex;
+  align-items: center;
+  padding: 3px 6px;                /* Reduced padding for a smaller container */
+  margin: 0 3px;                   /* Reduced margin between items */
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+  /* max-width: 150px;  Uncomment and adjust if the container is too wide */
+}
+
+.nav-link-container:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
 /* Section Headings */
 section h2 {
   font-weight: bold;
