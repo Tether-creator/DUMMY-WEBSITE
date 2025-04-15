@@ -178,3 +178,13 @@ footer .social-icons a:hover {
   background-color: var(--accent-color);
   color: var(--dark-color);
 }
+
+.nav-link-container {
+  padding: 10px 15px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.nav-link-container:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
