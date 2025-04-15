@@ -198,4 +198,6 @@ footer .social-icons a:hover {
 .nav-link-container:hover {
   /* Highlight background on hover */
   background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
 }
