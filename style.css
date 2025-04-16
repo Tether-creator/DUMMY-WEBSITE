@@ -32,7 +32,7 @@ body {
 .main-title {
   margin: 0;
   font-weight: 900;
-  font-size: 1.8rem; /* Reduced from 2rem */
+  font-size: 1.8rem;
   line-height: 1;
   display: inline-block;
 }
@@ -45,7 +45,7 @@ body {
 
 /* Reduce nav link font size */
 .nav-link {
-  font-size: 0.85rem; /* Reduced from 0.95rem */
+  font-size: 0.85rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -58,10 +58,10 @@ body {
 .nav-link-container {
   display: inline-flex;
   align-items: center;
-  margin: 0 2px;             /* Reduced horizontal margin */
-  padding: 2px 4px;          /* Reduced padding for a compact look */
+  margin: 0 2px;
+  padding: 2px 4px;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1);  /* Always visible subtle background */
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
@@ -201,8 +201,8 @@ footer .social-icons a:hover {
   .navbar-collapse .nav-link-container {
     display: block !important;
     width: 100%;
-    margin: 5px 0;        /* Vertical spacing */
-    padding: 8px 10px;    /* Increased padding for ease of tapping */
+    margin: 5px 0;
+    padding: 8px 10px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1) !important;
   }
@@ -213,4 +213,27 @@ footer .social-icons a:hover {
   .navbar-collapse .nav-link {
     font-size: 1rem;
   }
+}
+
+/* Live Price Feed Section */
+.live-price-section {
+  background-color: #fff;                     
+  border: 2px solid var(--primary-color);      
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.live-price-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.live-price-section .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
 }
