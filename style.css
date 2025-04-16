@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-brand img {
-  margin-right: 4px; /* Tighter spacing */
+  margin-right: 4px;
   vertical-align: middle;
 }
 
@@ -47,9 +47,17 @@ body {
 
 /* Individual Nav Link Container */
 .nav-link-container {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 3px 6px;           /* Reduced padding */
+  margin: 0 3px;              /* Reduced margin */
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1); /* Always visible subtle background */
+  transition: background-color 0.3s ease;
+}
+
+.nav-link-container:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Hero Section */
@@ -75,30 +83,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* Smaller, tidier nav link containers */
-.nav-link-container {
-  display: inline-flex;        /* Keep them horizontally aligned */
-  align-items: center;
-  margin: 0 4px;               /* Slight space between each container */
-  padding: 3px 6px;            /* Reduced padding for a smaller look */
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  background-color: transparent; /* or a subtle color if you prefer */
-}
-
-.nav-link-container:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
-}
-
-/* If you want the nav link text smaller */
-.nav-link {
-  font-size: 0.95rem;   /* Slightly reduce font size if needed */
-  color: #fff;          /* Ensure it's visible on your navbar background */
-  text-decoration: none;
-}
-
-
 
 /* Section Headings */
 section h2 {
@@ -182,7 +166,7 @@ footer .social-icons a:hover {
   margin: 20px auto;
   padding: 30px;
   text-align: center;
-  background-color: #8d6bfc;
+  background-color: #ffffff;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
 }
@@ -201,27 +185,4 @@ footer .social-icons a:hover {
 .coingecko-link:hover {
   background-color: var(--accent-color);
   color: var(--dark-color);
-}
-
-.nav-link-container {
-  /* Always visible styles */
-  display: flex;
-  align-items: center;
-  margin: 0 5px;              /* Some horizontal spacing between each container */
-  padding: 5px 10px;          /* The padding that ensures the “padded container” look */
-  border-radius: 4px;         /* Rounds corners a bit */
-  
-  /* Subtle background color so container is visible at all times 
-     Adjust RGBA or color codes as needed to match your navbar design */
-  background-color: rgba(255, 255, 255, 0.05);
-  
-  /* Smooth transition for hover changes */
-  transition: background-color 0.3s ease;
-}
-
-.nav-link-container:hover {
-  /* Highlight background on hover */
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-
 }
