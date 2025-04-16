@@ -94,6 +94,11 @@ body {
   z-index: 2;
 }
 
+/* Spacing for the "Learn More" link in the hero */
+.hero-learn-more {
+  margin-top: 20px;
+}
+
 /* Section Headings */
 section h2 {
   font-weight: bold;
@@ -170,12 +175,10 @@ footer .social-icons a:hover {
   }
 }
 
-/* GeckoTerminal Chart Banner */
+/* GeckoTerminal Banner (full-width) */
 .geckoterminal-banner {
-  /* Now that we have .container, we can remove max-width */
-  margin: 30px auto; /* You can adjust top/bottom margin if desired */
+  margin: 30px 0;
   padding: 30px;
-  text-align: center;
   background-color: #ffffff;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
@@ -189,15 +192,14 @@ footer .social-icons a:hover {
 
 .geckoterminal-iframe-wrapper {
   width: 100%;
-  overflow: hidden; /* Prevents horizontal scrolling if the iframe is large */
+  overflow: hidden;
 }
 
 .geckoterminal-iframe-wrapper iframe {
   width: 100%;
-  min-height: 600px; /* or 800px as needed */
+  height: 500px; /* Reduced height */
   border: none;
 }
-
 
 /* Mobile-Specific Adjustments for Navigation */
 @media (max-width: 767.98px) {
