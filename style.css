@@ -196,29 +196,6 @@ footer .social-icons a:hover {
   color: var(--dark-color);
 }
 
-/* Live Price Feed Section */
-.live-price-section {
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
-  border-radius: 8px;
-  padding: 30px;
-  margin: 30px auto;
-  max-width: 1000px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.live-price-section h2 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.live-price-section .price {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--dark-color);
-}
-
 /* Mobile-Specific Adjustments for Navigation */
 @media (max-width: 767.98px) {
   .navbar-collapse .nav-link-container {
@@ -236,4 +213,27 @@ footer .social-icons a:hover {
   .navbar-collapse .nav-link {
     font-size: 1rem;
   }
+}
+
+/* Live Price Feed Section */
+.live-price-section {
+  background-color: #fff;                     
+  border: 2px solid var(--primary-color);      
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.live-price-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.live-price-section .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
 }
