@@ -156,23 +156,10 @@ footer .social-icons a:hover {
   color: var(--primary-color);
 }
 
-/* CTA Section Styling for Whitepaper, Join the Team, Airdrop, and Contact Us */
-.cta-section {
-  padding: 20px;
-  text-align: center;
-}
-
-.cta-section:not(:last-child) {
-  border-right: 2px solid var(--primary-color);
-}
-
-/* Media Query for CTA on Small Screens */
-@media (max-width: 767.98px) {
-  .cta-section:not(:last-child) {
-    border-right: none;
-    border-bottom: 2px solid var(--primary-color);
-    margin-bottom: 20px;
-  }
+/* Contact Us Section (Using default Bootstrap spacing) */
+#contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* GeckoTerminal Banner (Full-Width Embed) */
@@ -199,12 +186,6 @@ footer .social-icons a:hover {
   width: 100%;
   height: 500px;
   border: none;
-}
-
-/* Contact Us Section (Using default Bootstrap spacing) */
-#contact {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 /* Mobile-Specific Adjustments for Navigation */
