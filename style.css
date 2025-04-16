@@ -188,21 +188,27 @@ footer .social-icons a:hover {
   border: none;
 }
 
-/* Mobile-Specific Adjustments for Navigation */
 @media (max-width: 767.98px) {
+  /* Ensure the collapsed navbar displays as a block */
+  .navbar-collapse {
+    display: block !important;
+  }
+  /* Force each nav-link container to appear as block elements */
   .navbar-collapse .nav-link-container {
     display: block !important;
-    width: 100%;
-    margin: 5px 0;
-    padding: 8px 10px;
+    width: 100% !important;
+    margin: 5px 0;        /* Vertical spacing between nav items */
+    padding: 8px 10px;    /* Increased padding for an easier tap target */
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1) !important;
   }
+  /* Hover effect for mobile */
   .navbar-collapse .nav-link-container:hover {
     background-color: rgba(255, 255, 255, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
   }
+  /* Adjust nav link text size */
   .navbar-collapse .nav-link {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
