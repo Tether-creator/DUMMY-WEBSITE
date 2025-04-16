@@ -38,7 +38,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Brand (Logo + Main Title) -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="otokologo.png" alt="OTOKO Logo" width="40" height="40" class="d-inline-block align-center" />
         <h1 class="main-title">OTOKO (OTK)</h1>
       </a>
@@ -47,35 +47,33 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Navigation Links in Individual Containers -->
-          <div class="collapse navbar-collapse" id="navbarNavCustom">
-  <div class="d-flex justify-content-end align-items-center w-100">
-    <div class="nav-link-container">
-      <a class="nav-link" href="#home">Home</a>
-    </div>
-    <div class="nav-link-container">
-      <a class="nav-link" href="about.html">About</a>
-    </div>
-    <div class="nav-link-container">
-      <a class="nav-link" href="tokenomics.html">Tokenomics</a>
-    </div>
-    <div class="nav-link-container">
-      <a class="nav-link" href="roadmap.html">Roadmap</a>
-    </div>
-    <div class="nav-link-container">
-      <a class="nav-link" href="whitepaper.html">Whitepaper</a>
-    </div>
-    <div class="nav-link-container">
-      <a class="nav-link" href="join.html">Join the Team</a>
-    </div>
-    <div class="nav-link-container">
-      <a class="nav-link" href="airdrop.html">Airdrop</a>
-    </div>
-    <!-- Re-add "Learn More" in line -->
-    <div class="nav-link-container">
-      <!-- If you’re using a modal for the content: -->
-      <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
-      <!-- OR, if it's a separate page:
-           <a class="nav-link" href="learn-more.html">Learn More</a> -->
+      <div class="collapse navbar-collapse" id="navbarNavCustom">
+        <div class="d-flex justify-content-end align-items-center w-100">
+          <div class="nav-link-container">
+            <a class="nav-link" href="#home">Home</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="about.html">About</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="tokenomics.html">Tokenomics</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="roadmap.html">Roadmap</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="whitepaper.html">Whitepaper</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="join.html">Join the Team</a>
+          </div>
+          <div class="nav-link-container">
+            <a class="nav-link" href="airdrop.html">Airdrop</a>
+          </div>
+          <div class="nav-link-container">
+            <!-- Using modal for Learn More -->
+            <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
@@ -87,11 +85,52 @@
       <img src="otokologo.png" alt="OTOKO Logo" width="120" height="120" class="mb-4" />
       <h1 class="display-4">Welcome to OTOKO</h1>
       <p class="lead">Redefining the future of decentralized finance.</p>
-   <div class="nav-link-container">
-    <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
-  </div>
-</section>
+      <!-- Optionally include a "Learn More" button here too -->
+      <div class="nav-link-container">
+        <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
+      </div>
+    </div>
+  </section>
   
+  <!-- Learn More Modal -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">About OTOKO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Our Vision</h3>
+          <p>
+            At OTOKO, we envision a transparent, decentralized financial ecosystem that empowers every participant. Our goal is to disrupt traditional centralized systems and build a platform where fairness, innovation, and community governance drive real-world value.
+          </p>
+          <h3>Innovative Technology</h3>
+          <p>
+            Built on the Binance Smart Chain, OTOKO leverages cutting-edge smart contract technology to deliver fast, secure, and cost-effective transactions. Our smart contracts undergo rigorous audits and incorporate advanced features to promote transparency and security.
+          </p>
+          <h3>Token Utility and Growth</h3>
+          <p>
+            OTOKO is designed to serve as more than just a digital asset. It is integral to our decentralized ecosystem, offering staking, governance participation, and seamless integration into various DeFi applications. This ensures that every stakeholder benefits from the network’s growth and innovation.
+          </p>
+          <h3>Community Empowerment</h3>
+          <p>
+            We believe in the power of community. By actively involving token holders in decision-making processes and providing regular updates, we ensure that every voice is heard. Our commitment to decentralized governance and transparent communication fosters trust and long-term engagement.
+          </p>
+          <h3>Looking Ahead</h3>
+          <p>
+            With a clear roadmap and strategic partnerships, OTOKO is on track to set new standards in decentralized finance. Join us in building a future where financial empowerment is accessible to all.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- CoinGecko Banner Section -->
   <section class="coingecko-banner text-center">
     <h3>Listed on CoinGecko</h3>
@@ -102,48 +141,38 @@
   </section>
 
   <!-- About Section -->
-<section id="about" class="container py-5">
-  <h2 class="text-center">About OTOKO</h2>
-  <p class="lead text-center">
-    OTOKO is a groundbreaking token built on the Binance Smart Chain, designed to revolutionize decentralized finance through transparency, security, and community empowerment.
-  </p>
-  <div class="about-content">
-    <h3>Our Vision</h3>
-    <p>
-      At OTOKO, we envision a financial ecosystem free from centralization and opacity—where every participant, regardless of scale, has the opportunity to influence and benefit from the success of the network. Our aim is to foster a future where financial systems are open, accessible, and built on trust.
+  <section id="about" class="container py-5">
+    <h2 class="text-center">About OTOKO</h2>
+    <p class="lead text-center">
+      OTOKO is a groundbreaking token built on the Binance Smart Chain designed to revolutionize decentralized finance through transparency, security, and community empowerment.
     </p>
+    <div class="about-content">
+      <h3>Our Vision</h3>
+      <p>
+        We envision a financial ecosystem free from centralization and opacity—where every participant can influence and benefit from the network’s success. Our mission is to promote open, accessible, and trust-based financial systems.
+      </p>
 
-    <h3>Innovative Technology</h3>
-    <p>
-      Our token leverages the robust infrastructure of the Binance Smart Chain to deliver fast, cost-effective, and secure transactions. By integrating advanced smart contract mechanisms, OTOKO ensures:
-    </p>
-    <ul>
-      <li><strong>Transparency:</strong> Every transaction is recorded and accessible on the blockchain.</li>
-      <li><strong>Security:</strong> Our smart contracts undergo rigorous audits to maintain the highest security standards.</li>
-      <li><strong>Efficiency:</strong> With low transaction fees and quick processing times, OTOKO is built for the future of DeFi.</li>
-    </ul>
+      <h3>Innovative Technology</h3>
+      <p>
+        Leveraging the Binance Smart Chain, OTOKO offers fast, cost-effective, and secure transactions through advanced smart contract features. Our fully audited contracts ensure transparency and durability.
+      </p>
 
-    <h3>Token Utility and Growth</h3>
-    <p>
-      OTOKO is more than just a token—it is a dynamic asset engineered to empower its holders. Key utility features include:
-    </p>
-    <ul>
-      <li><strong>Decentralized Governance:</strong> Token holders actively participate in decisions that shape the project's future.</li>
-      <li><strong>Staking and Rewards:</strong> Secure staking platforms provide consistent rewards and incentivize long-term holding.</li>
-      <li><strong>Robust Ecosystem Integration:</strong> OTOKO can be used for various financial applications, from payments to DeFi integrations.</li>
-    </ul>
+      <h3>Token Utility and Growth</h3>
+      <p>
+        More than just a token, OTOKO empowers its holders through decentralized governance, staking and rewards, and integration into a versatile DeFi ecosystem. This multi-utility approach provides both practical use and long-term value.
+      </p>
 
-    <h3>Empowering Our Community</h3>
-    <p>
-      Our commitment to community is at the heart of OTOKO. We engage continuously with our ecosystem through transparent communications, regular updates, and open governance mechanisms. By inviting investors and enthusiasts to participate, we are building a decentralized network where every voice counts.
-    </p>
+      <h3>Empowering Our Community</h3>
+      <p>
+        Our commitment to community is evident through transparent communication, regular updates, and an inclusive governance model where every token holder has a say.
+      </p>
 
-    <h3>Looking Ahead</h3>
-    <p>
-      With a clear roadmap focused on sustainable growth, strategic partnerships, and innovative use-cases, OTOKO is poised to set new standards in decentralized finance. Join us in shaping a future where financial empowerment is accessible to all.
-    </p>
-  </div>
-</section>
+      <h3>Looking Ahead</h3>
+      <p>
+        With a robust roadmap and strategic partnerships, OTOKO is set to establish new benchmarks in decentralized finance. Join us as we shape a future defined by financial empowerment.
+      </p>
+    </div>
+  </section>
 
   <!-- Tokenomics Section -->
   <section id="tokenomics" class="bg-light py-5">
@@ -159,7 +188,7 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <img src="img/tokenomics-chart.png" alt="Tokenomics Chart" class="img-fluid" />
+          <img src="img/tokenomics-chart.png" alt="Tokenomics Chart" class="img-fluid">
         </div>
       </div>
     </div>
@@ -196,17 +225,17 @@
       <h2 class="text-center">Our Team</h2>
       <div class="row mt-4">
         <div class="col-md-4 text-center team-member">
-          <img src="img/team1.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150" />
+          <img src="img/team1.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150">
           <h5>John Doe</h5>
           <p>Founder &amp; CEO</p>
         </div>
         <div class="col-md-4 text-center team-member">
-          <img src="img/team2.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150" />
+          <img src="img/team2.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150">
           <h5>Jane Smith</h5>
           <p>CTO</p>
         </div>
         <div class="col-md-4 text-center team-member">
-          <img src="img/team3.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150" />
+          <img src="img/team3.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3" width="150" height="150">
           <h5>Emily Johnson</h5>
           <p>Marketing Lead</p>
         </div>
@@ -214,7 +243,7 @@
     </div>
   </section>
 
-  <!-- CTA Section: Whitepaper, Join the Team, and Airdrop -->
+  <!-- CTA Section: Whitepaper, Join the Team, Airdrop -->
   <section id="cta" class="container py-5">
     <div class="row text-center">
       <!-- Whitepaper Column -->
@@ -231,7 +260,7 @@
         <p>
           We're always looking for passionate individuals to help us grow. If you're interested in joining our team, get in touch!
         </p>
-        <a href="#contact" class="btn btn-primary">Apply Now</a>
+        <a href="join.html" class="btn btn-primary">Apply Now</a>
       </div>
       <!-- Airdrop Column -->
       <div class="col-md-4 cta-section">
@@ -239,7 +268,7 @@
         <p>
           Trade at least 3 times to qualify for a 10,000 OTK airdrop. Join the community and start trading!
         </p>
-        <a href="#contact" class="btn btn-primary">Claim Airdrop</a>
+        <a href="airdrop.html" class="btn btn-primary">Claim Airdrop</a>
       </div>
     </div>
   </section>
@@ -251,11 +280,11 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
         </div>
         <div class="form-group col-md-6">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Your Email" />
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
         </div>
       </div>
       <div class="form-group">
@@ -290,11 +319,8 @@
   
   <!-- Smooth Scrolling Behavior -->
   <script>
-    // Ensure smooth scrolling
     document.documentElement.style.scrollBehavior = 'smooth';
-
-    // Auto-collapse the mobile navbar when a link is clicked
-    $(document).on('click', '.navbar-collapse.show .nav-link', function() {
+    $(document).on('click', '.navbar-collapse.show .nav-link', function(){
       $('.navbar-toggler').click();
     });
   </script>
