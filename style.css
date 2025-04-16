@@ -196,29 +196,10 @@ footer .social-icons a:hover {
   color: var(--dark-color);
 }
 
-/* Mobile-Specific Adjustments for Navigation */
-@media (max-width: 767.98px) {
-  .navbar-collapse .nav-link-container {
-    display: block !important;
-    width: 100%;
-    margin: 5px 0;
-    padding: 8px 10px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1) !important;
-  }
-  .navbar-collapse .nav-link-container:hover {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  }
-  .navbar-collapse .nav-link {
-    font-size: 1rem;
-  }
-}
-
 /* Live Price Feed Section */
 .live-price-section {
-  background-color: #fff;                     
-  border: 2px solid var(--primary-color);      
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
   padding: 30px;
   margin: 30px auto;
@@ -236,4 +217,23 @@ footer .social-icons a:hover {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--dark-color);
+}
+
+/* Mobile-Specific Adjustments for Navigation */
+@media (max-width: 767.98px) {
+  .navbar-collapse .nav-link-container {
+    display: block !important;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  .navbar-collapse .nav-link-container:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 1rem;
+  }
 }
