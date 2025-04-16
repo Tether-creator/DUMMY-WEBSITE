@@ -78,7 +78,7 @@
           <div class="nav-link-container">
             <a class="nav-link" href="airdrop.html">Airdrop</a>
           </div>
-          <!-- "Learn More" (modal trigger) -->
+          <!-- "Learn More" in navbar (optional) -->
           <div class="nav-link-container">
             <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
           </div>
@@ -93,65 +93,50 @@
       <img src="otokologo.png" alt="OTOKO Logo" width="120" height="120" class="mb-4" />
       <h1 class="display-4">Welcome to OTOKO</h1>
       <p class="lead">Redefining the future of decentralized finance.</p>
+      <!-- Return "Learn More" link under hero text -->
+      <div class="nav-link-container hero-learn-more">
+        <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
+      </div>
     </div>
   </section>
 
-<!-- GeckoTerminal Embed: Replaces Live Price Feed & CoinGecko Banner -->
-<section id="geckoTerminalEmbed" class="container geckoterminal-banner text-center">
-  <h2>OTOKO Price & Chart</h2>
-  <div class="geckoterminal-iframe-wrapper">
-    <!-- Embed the GeckoTerminal page you showed in your screenshot -->
-    <iframe
-      src="https://www.geckoterminal.com/bsc/pools/0xe3183e436d60689bc0ae0a8506d0782f5b261b4c"
-      width="100%"
-      height="800"
-      style="border: none;"
-      loading="lazy"
-    >
-    </iframe>
-  </div>
-</section>
+  <!-- GeckoTerminal Embed (Full-Width Container) -->
+  <section id="geckoTerminalEmbed" class="geckoterminal-banner text-center">
+    <div class="container-fluid px-0">
+      <h2>OTOKO Price & Chart</h2>
+      <div class="geckoterminal-iframe-wrapper">
+        <iframe
+          src="https://www.geckoterminal.com/bsc/pools/0xe3183e436d60689bc0ae0a8506d0782f5b261b4c"
+          width="100%"
+          height="500"  <!-- Reduced height -->
+          style="border: none;"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional sections (e.g., Contact Us, etc.) can now follow below here. -->
 
   <!-- Learn More Modal -->
-  <div
-    class="modal fade"
-    id="aboutModal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="aboutModalLabel"
-    aria-hidden="true"
-  >
+  <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="aboutModalLabel">About OTOKO</h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <h3>Our Vision and Innovation</h3>
           <p>
-            OTOKO is built to revolutionize decentralized finance by creating a
-            transparent, secure, and community-driven ecosystem. Our advanced
-            smart contracts on Binance Smart Chain ensure efficient, low-fee
-            transactions with complete transparency.
+            OTOKO is built to revolutionize decentralized finance by creating a transparent, secure, and community-driven ecosystem. Our advanced smart contracts on Binance Smart Chain ensure efficient, low-fee transactions with complete transparency.
           </p>
           <!-- Additional modal content as needed -->
         </div>
         <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-dismiss="modal"
-          >
-            Close
-          </button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -174,25 +159,15 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS, Popper.js, jQuery -->
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    crossorigin="anonymous"
-  ></script>
-  
-  <!-- Smooth Scrolling & Auto-collapse Mobile Nav -->
+  <!-- Scripts: jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <!-- Smooth Scrolling & auto-close nav on mobile -->
   <script>
-    document.documentElement.style.scrollBehavior = "smooth";
-    $(document).on("click", ".navbar-collapse.show .nav-link", function () {
-      $(".navbar-toggler").click();
+    document.documentElement.style.scrollBehavior = 'smooth';
+    $(document).on('click', '.navbar-collapse.show .nav-link', function() {
+      $('.navbar-toggler').click();
     });
   </script>
 </body>
