@@ -4,21 +4,21 @@
   <!-- Primary Meta Tags -->
   <meta name="title" content="OTOKO - The Future of Decentralized Finance">
   <meta name="description" content="OTOKO is a revolutionary token built on the Binance Smart Chain that emphasizes transparency and community-driven innovation.">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourwebsiteurl.com/">
   <meta property="og:title" content="OTOKO - The Future of Decentralized Finance">
   <meta property="og:description" content="OTOKO is a revolutionary token built on the Binance Smart Chain that emphasizes transparency and community-driven innovation.">
   <meta property="og:image" content="https://yourwebsiteurl.com/img/otokologo.png">
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://yourwebsiteurl.com/">
   <meta name="twitter:title" content="OTOKO - The Future of Decentralized Finance">
   <meta name="twitter:description" content="OTOKO is a revolutionary token built on the Binance Smart Chain that emphasizes transparency and community-driven innovation.">
   <meta name="twitter:image" content="https://yourwebsiteurl.com/img/otokologo.png">
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OTOKO - The Future of Decentralized Finance</title>
@@ -67,6 +67,10 @@
           <div class="nav-link-container">
             <a class="nav-link" href="airdrop.html">Airdrop</a>
           </div>
+          <!-- "Learn More" as in your existing style -->
+          <div class="nav-link-container">
+            <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
@@ -79,21 +83,18 @@
       <h1 class="display-4">Welcome to OTOKO</h1>
       <p class="lead">Redefining the future of decentralized finance.</p>
     </div>
-      <!-- "Learn More" (kept as is, triggering modal) -->
-    <div class="nav-link-container">
-            <a class="nav-link" href="#aboutModal" data-toggle="modal">Learn More</a>
-          </div>
   </section>
 
-  <!-- Live Price Feed Section (Massive Banner Under Hero Section) -->
+  <!-- Live Price Feed Section (Displayed Massive Under Hero Section) -->
   <section id="livePriceFeed" class="live-price-section text-center">
-    <h2>OTOKO Live Price</h2>
+    <h2>Live Price Feed</h2>
     <div id="priceContainer">
-      <p class="https://www.geckoterminal.com/bsc/pools/0xe3183e436D60689Bc0Ae0A8506D0782F5B261B4C">Loading price...</p>
+      <p class="price">Loading price...</p>
     </div>
   </section>
-  
-  <!-- (Optional) You may keep the original CoinGecko banner below if desired -->
+
+  <!-- (Remaining sections such as About, Tokenomics, etc. remain as before) -->
+  <!-- CoinGecko Banner Section (Optional if you want to keep it as well) -->
   <section class="coingecko-banner text-center">
     <h3>Listed on CoinGecko</h3>
     <p>We are officially listed on CoinGecko! Check out our page here:</p>
@@ -101,8 +102,10 @@
       View OTOKO (OTK) on CoinGecko
     </a>
   </section>
-  
-  <!-- Learn More Modal (Existing Content) -->
+
+  <!-- Additional sections (About, Tokenomics, Roadmap, etc.) would follow here... -->
+
+  <!-- Learn More Modal (Your existing modal content) -->
   <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -117,7 +120,7 @@
           <p>
             OTOKO is built to revolutionize decentralized finance by creating a transparent, secure, and community-driven ecosystem. Our advanced smart contracts on Binance Smart Chain ensure efficient, low-fee transactions with complete transparency.
           </p>
-          <!-- Additional modal content as needed -->
+          <!-- Additional Learn More content as needed -->
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -125,8 +128,8 @@
       </div>
     </div>
   </div>
-  
-  <!-- Footer -->
+
+  <!-- Footer and Scripts -->
   <footer>
     <div class="container">
       <div class="social-icons mb-3">
@@ -143,16 +146,16 @@
     </div>
   </footer>
 
-  <!-- Scripts: jQuery, Popper.js, Bootstrap JS -->
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
   
   <!-- JavaScript for Live Price Feed -->
   <script>
-    // Function to fetch live price from CoinGecko
+    // Function to fetch the live price from CoinGecko
     function fetchPrice() {
-      // Replace 'otoko' with your token's CoinGecko ID; adjust endpoint if using contract data.
+      // Replace 'otoko' with your token's CoinGecko id; or use the contract endpoint if needed.
       fetch("https://api.coingecko.com/api/v3/simple/price?ids=otoko&vs_currencies=usd")
         .then(response => response.json())
         .then(data => {
@@ -167,13 +170,13 @@
           document.querySelector("#livePriceFeed .price").innerText = "Error loading price";
         });
     }
-    
-    // Fetch price on page load
+
+    // Fetch the price when the page loads
     fetchPrice();
-    // Update price every 30 seconds
+    // Update the price every 30 seconds (30000 milliseconds)
     setInterval(fetchPrice, 30000);
     
-    // Smooth scrolling & auto-collapse mobile navbar
+    // Smooth Scrolling & Auto-collapse Mobile Nav
     document.documentElement.style.scrollBehavior = 'smooth';
     $(document).on('click', '.navbar-collapse.show .nav-link', function(){
       $('.navbar-toggler').click();
