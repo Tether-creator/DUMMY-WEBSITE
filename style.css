@@ -172,10 +172,10 @@ footer .social-icons a:hover {
 
 /* GeckoTerminal Chart Banner */
 .geckoterminal-banner {
-  margin: 30px auto;
+  /* Now that we have .container, we can remove max-width */
+  margin: 30px auto; /* You can adjust top/bottom margin if desired */
   padding: 30px;
   text-align: center;
-  max-width: 1000px;       /* Adjust as needed */
   background-color: #ffffff;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
@@ -189,14 +189,15 @@ footer .social-icons a:hover {
 
 .geckoterminal-iframe-wrapper {
   width: 100%;
-  overflow: hidden;  /* Keep it from adding scrollbars if larger than container */
+  overflow: hidden; /* Prevents horizontal scrolling if the iframe is large */
 }
 
 .geckoterminal-iframe-wrapper iframe {
   width: 100%;
-  min-height: 600px; /* Adjust as needed for chart size */
+  min-height: 600px; /* or 800px as needed */
   border: none;
 }
+
 
 /* Mobile-Specific Adjustments for Navigation */
 @media (max-width: 767.98px) {
