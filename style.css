@@ -54,14 +54,14 @@ body {
   color: var(--accent-color) !important;
 }
 
-/* Individual Nav Link Container */
+/* Individual Nav Link Container with increased horizontal spacing */
 .nav-link-container {
   display: inline-flex;
   align-items: center;
-  margin: 0 2px;
-  padding: 2px 4px;
+  margin: 0 8px;             /* Increased horizontal spacing between tabs */
+  padding: 2px 4px;          /* Compact padding */
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
