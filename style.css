@@ -14,6 +14,8 @@ body {
 /* Navbar Styling */
 .navbar {
   background-color: var(--primary-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Center logo and main title */
@@ -30,7 +32,7 @@ body {
 .main-title {
   margin: 0;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.8rem; /* Reduced from 2rem */
   line-height: 1;
   display: inline-block;
 }
@@ -41,23 +43,31 @@ body {
   transition: color 0.3s ease;
 }
 
+/* Reduce nav link font size */
+.nav-link {
+  font-size: 0.85rem; /* Reduced from 0.95rem */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 .nav-link:hover {
   color: var(--accent-color) !important;
 }
 
-/* Individual Nav Link Container (Default Desktop) */
+/* Individual Nav Link Container */
 .nav-link-container {
   display: inline-flex;
   align-items: center;
-  padding: 3px 6px;           /* Reduced padding for a compact look */
-  margin: 0 3px;              /* Reduced margin */
+  margin: 0 2px;             /* Reduced horizontal margin */
+  padding: 2px 4px;          /* Reduced padding for a compact look */
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle, always visible background */
-  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);  /* Always visible subtle background */
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
 .nav-link-container:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Hero Section */
@@ -147,7 +157,6 @@ footer .social-icons a:hover {
   text-align: center;
 }
 
-/* Vertical divider between CTA columns for medium+ screens */
 .cta-section:not(:last-child) {
   border-right: 2px solid var(--primary-color);
 }
