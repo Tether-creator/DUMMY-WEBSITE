@@ -54,14 +54,14 @@ body {
   color: var(--accent-color) !important;
 }
 
-/* Individual Nav Link Container with increased horizontal spacing */
+/* Individual Nav Link Container (Desktop) */
 .nav-link-container {
   display: inline-flex;
   align-items: center;
-  margin: 0 8px;             /* Increased horizontal spacing between tabs */
-  padding: 2px 4px;          /* Compact padding */
+  margin: 0 8px;  /* Increased horizontal margin for extra space between tabs */
+  padding: 2px 4px;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
@@ -156,10 +156,23 @@ footer .social-icons a:hover {
   color: var(--primary-color);
 }
 
-/* Contact Us Section Styling (Bootstrap default is used here) */
-#contact {
-  margin-top: 30px;
-  margin-bottom: 30px;
+/* CTA Section Styling for Whitepaper, Join the Team, Airdrop, and Contact Us */
+.cta-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.cta-section:not(:last-child) {
+  border-right: 2px solid var(--primary-color);
+}
+
+/* Media Query for CTA on Small Screens */
+@media (max-width: 767.98px) {
+  .cta-section:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+  }
 }
 
 /* GeckoTerminal Banner (Full-Width Embed) */
@@ -188,27 +201,27 @@ footer .social-icons a:hover {
   border: none;
 }
 
+/* Contact Us Section (Using default Bootstrap spacing) */
+#contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Mobile-Specific Adjustments for Navigation */
 @media (max-width: 767.98px) {
-  /* Ensure the collapsed navbar displays as a block */
-  .navbar-collapse {
-    display: block !important;
-  }
-  /* Force each nav-link container to appear as block elements */
   .navbar-collapse .nav-link-container {
     display: block !important;
-    width: 100% !important;
-    margin: 5px 0;        /* Vertical spacing between nav items */
-    padding: 8px 10px;    /* Increased padding for an easier tap target */
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 10px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1) !important;
   }
-  /* Hover effect for mobile */
   .navbar-collapse .nav-link-container:hover {
     background-color: rgba(255, 255, 255, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
   }
-  /* Adjust nav link text size */
   .navbar-collapse .nav-link {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 }
