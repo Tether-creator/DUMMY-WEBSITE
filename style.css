@@ -91,6 +91,29 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Smaller, tidier nav link containers */
+.nav-link-container {
+  display: inline-flex;        /* Keep them horizontally aligned */
+  align-items: center;
+  margin: 0 4px;               /* Slight space between each container */
+  padding: 3px 6px;            /* Reduced padding for a smaller look */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  background-color: transparent; /* or a subtle color if you prefer */
+}
+
+.nav-link-container:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+}
+
+/* If you want the nav link text smaller */
+.nav-link {
+  font-size: 0.95rem;   /* Slightly reduce font size if needed */
+  color: #fff;          /* Ensure it's visible on your navbar background */
+  text-decoration: none;
+}
+
+
 
 /* Section Headings */
 section h2 {
