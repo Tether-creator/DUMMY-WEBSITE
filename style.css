@@ -188,11 +188,17 @@ footer .social-icons a:hover {
   border: none;
 }
 
-/* Mobile-Specific Adjustments for Navigation */
 @media (max-width: 767.98px) {
+  /* Force the flex container of nav links to stack vertically */
+  #navbarNavCustom > .d-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  
+  /* Ensure each nav link container becomes block-level and full-width */
   .navbar-collapse .nav-link-container {
     display: block !important;
-    width: 100%;
+    width: 100% !important;
     margin: 5px 0;
     padding: 8px 10px;
     text-align: center;
